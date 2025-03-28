@@ -3,5 +3,5 @@
   tasks: # lists the modules/collections/tasks
   - name: pinging the server
     ansible.builtin.ping:
+
     
-  
