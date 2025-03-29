@@ -10,4 +10,7 @@
   tasks:
   - name: DEVOPS-2 and CLOUD-1
     ansible.builtin.debug:
-    msg: "hello i'm prepareing for DEVOPS-2 and CLOUD"    
+      g: "hello i'm prepareing for DEVOPS-2 and CLOUD"    
+
+
+
