@@ -10,7 +10,5 @@
   tasks:
   - name: DEVOPS-2 and CLOUD-1
     ansible.builtin.debug:
-      g: "hello i'm prepareing for DEVOPS-2 and CLOUD"    
-
-
+      msg: "Hello I am from PLAY-2 and CLOUD"
 
