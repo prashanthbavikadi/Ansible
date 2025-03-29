@@ -1,14 +1,14 @@
 - name: DEVOPS
-  host: localhost
+  hosts: localhost
   tasks:
-  - name: DEVOPS and CLOUD
+  - name: DEVOPS and TASK-1
     ansible.builtin.debug:
-      msg: "i'm preaparing for DEVOPS-1 CLOUD"
+      msg: "Hello I am from DEVOPS and TASK-1"
 
-- name: DEVOPS-2
-  host: localhost
+- name: CLOUD
+  hosts: localhost
   tasks:
-  - name: DEVOPS-2 and CLOUD-1
+  - name: CLOUD and TASK-1
     ansible.builtin.debug:
-      msg: "Hello I am from PLAY-2 and CLOUD"
+      msg: "Hello I am working on CLOUD and TASK-1"
 
