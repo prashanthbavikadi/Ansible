@@ -1,0 +1,10 @@
+- name: variables
+  hosts: localhost
+  vars: #here we have decalre variable
+    Course: "ANSIBLE"
+    Trainer: "PRASHANTH"
+    Duration: "2months"
+  tasks:
+  - name: print the data
+    ansible.bulitin.debug:
+      msg: "Hi , im prepariung for {{Course}} at coaching center {{Trainer}} course time is {{Duration}}."
