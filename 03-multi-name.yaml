@@ -1,12 +1,12 @@
 - name: DEVOPS
-  host: localhost
+  host: web
   tasks:
   - name: DEVOPS and CLOUD
     ansible.builtin.debug:
       msg: "i'm preaparing for DEVOPS-1 CLOUD"
 
 - name: DEVOPS-2
-  host: localhost
+  host: web
   tasks:
   - name: DEVOPS-2 and CLOUD-1
     ansible.builtin.debug:
