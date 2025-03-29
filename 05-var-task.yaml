@@ -6,7 +6,7 @@
     Duration: "2 MONTHS"
   tasks:
   - name: Print overide information
-    vars: $ task level varaible
+    vars: #stask level varaible
       Course: "DEVOPS"
     ansible.builtin.debug:
       msg: "Hi, i'm learning {{Course}} by trainer called {{Trainer}} the duration is {{Duration}}."
