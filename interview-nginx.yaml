@@ -15,3 +15,8 @@
       name: nginx
       state: started
       enabled: yes
+  - name: start git
+    ansible.builtin.service:    # service means it will show wheather it is started or not
+      name: git
+      state: started
+      enabled: yes      
