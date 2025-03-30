@@ -1,16 +1,22 @@
-- name: varibles
-  hosts: web
+- name: variables
+  hosts: localhost
   vars: #variable declaration
-    Course: "TERRAFORM"
-    Trainer: "PRASHANTH"
-    Duration: "2 MONTHS"
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "15hrs"
   tasks:
-  - name: Print overide information
-    vars: # task level varaible
-      Course: "DEVOPS"
+  - name: print override information
+    vars: # Task level variables
+      Course: "DevOps"
     ansible.builtin.debug:
-      msg: "Hi, i'm learning {{Course}} by trainer called {{Trainer}} the duration is {{Duration}}."
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+  - name: print and information
+    vars:
+      Trainer: sandeep
+      course: ansible
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
 
-- name: print information
-  ansible.builtin.debug:
+  - name: print information
+    ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
