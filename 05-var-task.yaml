@@ -1,5 +1,5 @@
 - name: varibles
-  hosts: locahost
+  hosts: web
   vars: #variable declaration
     Course: "TERRAFORM"
     Trainer: "PRASHANTH"
