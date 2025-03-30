@@ -5,12 +5,12 @@
     Trainer: "PRASHANTH"
     Duration: "2 MONTHS"
   tasks:
-  - name: Print overide information
-    vars: # task level varaible
+   - name: Print overide information
+     vars: # task level varaible
       Course: "DEVOPS"
-    ansible.builtin.debug:
+     ansible.builtin.debug:
       msg: "Hi, i'm learning {{Course}} by trainer called {{Trainer}} the duration is {{Duration}}."
 
-  - name: print information
-    ansible.builtin.debug:
+   - name: print information
+     ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
