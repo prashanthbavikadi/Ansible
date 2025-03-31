@@ -12,7 +12,7 @@
     tasks:  
     - name: convert into uppercase
       ansible.builtin.debug:
-       msg: "{{greetings | upper}}"
+       msg: "{{ greetings | upper}}"
 
 - name: lower case
   hosts: web
@@ -21,6 +21,6 @@
     tasks:
     - name: convert inti lowercase
       ansible,builtin.debug:
-        msg: "{{greetings | lower }}"   
+        msg: "{{ greetings | lower }}"   
 
         
