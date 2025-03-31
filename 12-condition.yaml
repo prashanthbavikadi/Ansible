@@ -1,4 +1,4 @@
-- name: conditons
+- name: conditon
   host: web 
   become: yes
   tasks:
