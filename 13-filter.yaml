@@ -9,18 +9,18 @@
   hosts: web
   vars:
     greetings: "hello bunny How are you ?"
-    tasks:  
-    - name: convert into uppercase
-      ansible.builtin.debug:
-       msg: "{{ greetings | upper}}"
+  tasks:  
+  - name: convert into uppercase
+    ansible.builtin.debug:
+      msg: "{{ greetings | upper}}"
 
 - name: lower case
   hosts: web
   vars: 
     greetings: "HELLO PRASHANTH HOW ARE YOU ?"
-    tasks:
-    - name: convert inti lowercase
-      ansible,builtin.debug:
-        msg: "{{ greetings | lower }}"   
+  tasks:
+  - name: convert inti lowercase
+    ansible,builtin.debug:
+      msg: "{{ greetings | lower }}"   
 
         
