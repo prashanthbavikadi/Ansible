@@ -1,5 +1,5 @@
 - name: conditon
-  host: web 
+  hosts: web 
   become: yes
   tasks:
   - name: check the user exits or not
