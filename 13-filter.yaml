@@ -19,8 +19,8 @@
   vars: 
     greetings: "HELLO PRASHANTH HOW ARE YOU ?"
   tasks:
-  - name: convert inti lowercase
-    ansible,builtin.debug:
+  - name: convert into lowercase
+    ansible.builtin.debug:
       msg: "{{ greetings | lower }}"   
 
         
